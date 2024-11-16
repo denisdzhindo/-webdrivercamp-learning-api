@@ -1,0 +1,30 @@
+{
+    "list": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "tuple": [
+        1,
+        2,
+        3,
+        4,
+        5
+    ],
+    "string": "Hello World!",
+    "bool": false,
+    "null": null,
+    "int": 123,
+    "float": 3.14,
+    "dict": {
+        "abc": true,
+        "Hello": "World",
+        "10": [
+            2,
+            3,
+            4
+        ]
+    }
+}
