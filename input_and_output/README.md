@@ -1,6 +1,6 @@
 ## Input/Output: Working with Files and JSON in Python
 
-This section covers handling file operations and working with JSON data in Python, which are crucial for reading from and writing to files, as well as exchanging data in the widely-used JSON format.
+This section covers handling file operations and working with JSON data in Python, which are crucial for reading from and writing to files, as well as exchanging data in the widely-used JSON format. You do not need to copy data.txt and data.json files. 
 
 ### Key Topics:
 
