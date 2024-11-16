@@ -11,6 +11,6 @@ This section covers handling file operations and working with JSON data in Pytho
   - Example operations: `json.load()`, `json.dump()`, `json.dumps()`.
   
 - **JSON Serialization and Deserialization**: Convert Python objects into JSON format (serialization) and convert JSON data back into Python objects (deserialization). Handle custom Python objects and complex data types (e.g., datetime, custom classes).
-  - Example: Custom serialization with `json.JSONEncoder`.
+  
 
 
