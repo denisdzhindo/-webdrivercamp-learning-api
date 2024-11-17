@@ -10,7 +10,7 @@ def get_repos(url):
         return list_of_items_sorted, response.status_code
     else:
         print(f"Error: {response.status_code}")
-        return [], 0, response.status_code  # Return empty list and zero count in case of an error
+        return [], response.status_code  # Return empty list and status code in case of an error
 
 if __name__ == "__main__":
 
