@@ -9,7 +9,7 @@ def get_repos(url):
         list_of_items_sorted = sorted(list_, key=lambda x: x['full_name'].lower())
         return list_of_items_sorted, response.status_code
     else:
-        print(f"Error: {response.status_code}")
+        print(f"Error code: {response.status_code}")
         return [], response.status_code  # Return empty list and status code in case of an error
 
 if __name__ == "__main__":

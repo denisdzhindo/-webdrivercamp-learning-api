@@ -1,17 +1,17 @@
 import json
 
-def from_json_file(file_name):
-    with open(file_name) as file:
-        data = json.load(file)
-    return(data)
+def from_json_file(file):
+    with open(file) as f:
+        data = json.load(f)
+    return data
 
 if __name__=="__main__":
     import os
     
     dir_path = os.path.dirname(os.path.realpath(__file__))
-    file_name = f"{dir_path}/data.json"
+    my_file_name = f"{dir_path}/data.json"
     
-    data_object = from_json_file(file_name)
+    data_object = from_json_file(my_file_name)
 
     print(data_object)
     print(type(data_object))
