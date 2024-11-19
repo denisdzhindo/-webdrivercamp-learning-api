@@ -15,10 +15,9 @@ def get_with_auth(url, token):
         return []
 
 my_url = "https://api.github.com/user/repos"
-my_token = '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'
+my_token = ''
 my_headers_list = get_with_auth(my_url, my_token)
 print(f"Total repos: {len(my_headers_list)}\n\nResponse headers:\n{"\n".join(my_headers_list)}")
-
 
 
 
