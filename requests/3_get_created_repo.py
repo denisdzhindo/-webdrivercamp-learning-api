@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 def get_created_repo(url):
-    token = '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'
+    token = ''
     headers = {'Authorization': f'token {token}'}
     r = requests.get(url, headers=headers)
     repo = r.json()
