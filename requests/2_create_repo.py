@@ -2,7 +2,7 @@ import requests
 from pprint import pprint
 
 def create_repo(url):
-    token = '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'
+    token = ''
     headers = {'Authorization': f'token {token}'}
     data = {'name': 'repo-created-with-api','private': True,'has_wiki': False}
     r = requests.post(url, headers=headers, json=data)
