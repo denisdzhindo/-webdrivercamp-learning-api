@@ -7,6 +7,7 @@ def update_repo(url, token, new_description):
     data = {
         'description': new_description
     }
+
     r = requests.patch(url, headers=headers, json=data)
     if r.status_code == 200:
         print(f'Response status code: {r.status_code}'
