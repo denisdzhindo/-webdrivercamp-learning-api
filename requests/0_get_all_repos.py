@@ -1,5 +1,12 @@
 import requests
-
+'''
+Send a GET request to 
+https://api.github.com/search/repositories?q=webdrivercamp-learning-python 
+where parameter q - the search keywords
+Print the response status code
+Print total_count of found items from response
+Return a list of items from response sorted by full_name (the dict key in each item)
+'''
 def get_repos(url):
     response = requests.get(url)
 
@@ -11,6 +18,7 @@ def get_repos(url):
     else:
         print(f"Error code: {response.status_code}")
         return [], response.status_code  # Return empty list and status code in case of an error
+
 
 if __name__ == "__main__":
 
@@ -25,5 +33,3 @@ if __name__ == "__main__":
         user = element['owner']['login']  # Get the owner username
         repo = element['name']  # Get the repository name
         print(f"{user:20}", repo)
-
-

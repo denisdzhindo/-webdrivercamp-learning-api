@@ -1,0 +1,48 @@
+curl -X 'POST' \
+  'https://petstore.swagger.io/v2/user/createWithList' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '[
+  {
+    "id": 0,
+    "username": "ddzhindo",
+    "firstName": "Denis",
+    "lastName": "Dzhindo",
+    "email": "dzhindo@outlook.com",
+    "password": "123",
+    "phone": "4156326341",
+    "userStatus": 0
+  }
+]'
+
+curl -X 'GET' \
+  'https://petstore.swagger.io/v2/user/ddzhindo' \
+  -H 'accept: application/json'
+
+{
+  "id": 6874987052,
+  "username": "ddzhindo",
+  "firstName": "Denis",
+  "lastName": "Dzhindo",
+  "email": "dzhindo@outlook.com",
+  "password": "123",
+  "phone": "4156326341",
+  "userStatus": 0
+}
+
+ access-control-allow-headers: Content-Type,api_key,Authorization 
+ access-control-allow-methods: GET,POST,DELETE,PUT 
+ access-control-allow-origin: * 
+ content-type: application/json 
+ date: Fri,22 Nov 2024 05:17:40 GMT 
+ server: Jetty(9.2.9.v20150224)
+
+curl -X 'DELETE' \
+  'https://petstore.swagger.io/v2/user/ddzhindo' \
+  -H 'accept: application/json'
+
+{
+  "code": 200,
+  "type": "unknown",
+  "message": "ddzhindo"
+} 

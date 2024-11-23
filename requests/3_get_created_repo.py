@@ -10,6 +10,7 @@ def get_created_repo(url):
     assert repo['private'] == True
     assert repo['name'] == 'repo-created-with-api'
     assert repo['owner']['login'] == 'denisdzhindo'
+    print(f"Response status code: {r.status_code}")
     return repo
 
 if __name__ == '__main__':
